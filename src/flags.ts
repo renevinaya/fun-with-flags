@@ -227,6 +227,16 @@ export const FLAGS: Flag[] = [
     colors: ['#E40303', '#FF8C00', '#FFED00', '#FFFFFF', '#008026', '#004DFF', '#750787'],
   },
   {
+    id: 'gay',
+    name: { en: 'Gay Men', de: 'Schwul' },
+    description: {
+      en: 'Represents gay men and others who identify with the gay male community. The green and teal tones symbolize community and nature, white represents gender-neutral relationships, and the blue and purple shades represent the spectrum of masculinity.',
+      de: 'Repräsentiert schwule Männer und andere, die sich mit der schwulen Gemeinschaft identifizieren. Die grünen und türkisen Töne stehen für Gemeinschaft und Natur, Weiß für geschlechtsneutrale Beziehungen, und Blau und Lila für das Spektrum der Männlichkeit.',
+    },
+    type: 'stripes',
+    colors: ['#078D70', '#26CEA8', '#98E8C1', '#FFFFFF', '#7BADE2', '#5049CC', '#3D1A8E'],
+  },
+  {
     id: 'aroace',
     name: { en: 'Aromantic Asexual (AroAce)', de: 'Aromantisch Asexuell (AroAce)' },
     description: {
