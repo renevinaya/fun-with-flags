@@ -1,6 +1,6 @@
 import { FLAGS, type Flag } from './flags.ts'
 
-export const QUESTIONS_PER_GAME = 10
+export const QUESTIONS_PER_GAME = FLAGS.length
 export const CHOICES_PER_QUESTION = 4
 
 export interface Question {

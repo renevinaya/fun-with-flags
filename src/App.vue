@@ -11,4 +11,9 @@ import Quiz from './Quiz.vue'
   <section class="section">
     <Quiz />
   </section>
+  <footer class="hero is-link is-small">
+    <div class="hero-body has-text-centered has-text-white">
+      <p>Made by <a href="https://github.com/renevinaya" class="has-text-white">René Mueller</a> &mdash; <a href="https://github.com/renevinaya/fun-with-flags" class="has-text-white">View on GitHub</a></p>
+    </div>
+  </footer>
 </template>
