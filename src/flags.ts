@@ -109,7 +109,7 @@ export const FLAGS: Flag[] = [
     id: 'progress',
     name: 'Progress Pride',
     type: 'svg',
-    svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 60"><rect x="0" y="0" width="100" height="10" fill="#E40303"/><rect x="0" y="10" width="100" height="10" fill="#FF8C00"/><rect x="0" y="20" width="100" height="10" fill="#FFED00"/><rect x="0" y="30" width="100" height="10" fill="#008026"/><rect x="0" y="40" width="100" height="10" fill="#004DFF"/><rect x="0" y="50" width="100" height="10" fill="#750787"/><polygon points="0,0 20,30 0,60" fill="#000000"/><polygon points="0,0 17,30 0,60" fill="#784F17"/><polygon points="0,0 14,30 0,60" fill="#74D7EE"/><polygon points="0,0 11,30 0,60" fill="#FFAFC8"/><polygon points="0,0 8,30 0,60" fill="#FFFFFF"/></svg>',
+    svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 60"><rect x="0" y="0" width="100" height="10" fill="#E40303"/><rect x="0" y="10" width="100" height="10" fill="#FF8C00"/><rect x="0" y="20" width="100" height="10" fill="#FFED00"/><rect x="0" y="30" width="100" height="10" fill="#008026"/><rect x="0" y="40" width="100" height="10" fill="#004DFF"/><rect x="0" y="50" width="100" height="10" fill="#750787"/><polygon points="0,0 35,30 0,60" fill="#FFFFFF"/><polygon points="0,0 29,30 0,60" fill="#FFAFC8"/><polygon points="0,0 23,30 0,60" fill="#74D7EE"/><polygon points="0,0 17,30 0,60" fill="#784F17"/><polygon points="0,0 11,30 0,60" fill="#000000"/></svg>',
   },
   {
     id: 'demisexual',

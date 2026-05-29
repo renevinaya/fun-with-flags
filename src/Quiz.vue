@@ -88,9 +88,6 @@ function advance(): void {
       </div>
     </div>
 
-    <div v-if="phase === 'answered'" class="has-text-centered mt-4">
-      <button class="button is-primary" @click="advance">Next &#x2192;</button>
-    </div>
   </div>
 
   <div v-else-if="phase === 'gameover'" class="quiz-layout has-text-centered">
