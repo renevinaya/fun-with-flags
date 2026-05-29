@@ -113,9 +113,6 @@ function advance(): void {
         <button class="delete" aria-label="close" @click="infoFlag = null"></button>
       </header>
       <section class="modal-card-body">
-        <div v-if="infoFlag" class="info-flag-preview mb-4">
-          <FlagDisplay :flag="infoFlag" />
-        </div>
         <p>{{ infoFlag?.description }}</p>
       </section>
     </div>
@@ -169,12 +166,5 @@ function advance(): void {
   &:hover {
     opacity: 1;
   }
-}
-
-.info-flag-preview {
-  width: 100%;
-  border-radius: 4px;
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 </style>
