@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
 import type { Flag } from './flags.ts'
-import { buildGame, type Question } from './quiz.ts'
+import { buildGame, QUESTIONS_PER_GAME, type Question } from './quiz.ts'
 import FlagDisplay from './FlagDisplay.vue'
 
 const questions = ref<Question[]>([])
@@ -59,7 +59,7 @@ function advance(): void {
 <template>
   <div v-if="phase === 'start'" class="quiz-layout has-text-centered">
     <h2 class="title is-3 mb-4">Do you know your pride flags?</h2>
-    <p class="mb-5">You'll see 10 flags — pick the right name from 4 options.</p>
+    <p class="mb-5">You'll see {{ QUESTIONS_PER_GAME }} flags — pick the right name from 4 options.</p>
     <button class="button is-primary is-large" @click="startGame">Start Quiz</button>
   </div>
 
