@@ -3,6 +3,9 @@ import { ref, computed } from 'vue'
 import type { Flag } from './flags.ts'
 import { buildGame, QUESTIONS_PER_GAME, type Question } from './quiz.ts'
 import FlagDisplay from './FlagDisplay.vue'
+import { ui, type language } from './translations.ts'
+
+const props = defineProps<{ language: language }>()
 
 const questions = ref<Question[]>([])
 const currentIndex = ref(0)
@@ -15,6 +18,10 @@ const infoFlag = ref<Flag | null>(null)
 
 const currentQuestion = computed<Question | null>(
   () => questions.value[currentIndex.value] ?? null
+)
+
+const introText = computed(() =>
+  ui['intro'][props.language].replace('{n}', String(QUESTIONS_PER_GAME))
 )
 
 function buttonClass(choice: Flag): string {
@@ -60,9 +67,9 @@ function advance(): void {
 
 <template>
   <div v-if="phase === 'start'" class="quiz-layout has-text-centered">
-    <h2 class="title is-3 mb-4">Do you know your pride flags?</h2>
-    <p class="mb-5">You'll see {{ QUESTIONS_PER_GAME }} flags — pick the right name from 4 options.</p>
-    <button class="button is-primary is-large" @click="startGame">Start Quiz</button>
+    <h2 class="title is-3 mb-4">{{ ui['tagline'][language] }}</h2>
+    <p class="mb-5">{{ introText }}</p>
+    <button class="button is-primary is-large" @click="startGame">{{ ui['startBtn'][language] }}</button>
   </div>
 
   <div v-else-if="phase === 'playing' || phase === 'answered'" class="quiz-layout">
@@ -72,7 +79,7 @@ function advance(): void {
       <FlagDisplay :flag="currentQuestion.correctFlag" />
     </div>
 
-    <h2 class="title is-5 has-text-centered mb-4">What flag is this?</h2>
+    <h2 class="title is-5 has-text-centered mb-4">{{ ui['question'][language] }}</h2>
 
     <div v-if="currentQuestion" class="columns is-multiline">
       <div
@@ -86,12 +93,12 @@ function advance(): void {
             :class="buttonClass(choice)"
             @click="selectAnswer(choice)"
           >
-            {{ choice.name }}
+            {{ choice.name[language] }}
           </button>
           <button
             class="answer-info-btn"
             @click="infoFlag = choice"
-            aria-label="Learn more"
+            :aria-label="ui['learnMore'][language]"
           >ⓘ</button>
         </div>
       </div>
@@ -100,20 +107,20 @@ function advance(): void {
   </div>
 
   <div v-else-if="phase === 'gameover'" class="quiz-layout has-text-centered">
-    <h2 class="title is-3 mb-4">Quiz Complete!</h2>
+    <h2 class="title is-3 mb-4">{{ ui['complete'][language] }}</h2>
     <p class="title is-1 mb-5">{{ score }} / {{ questions.length }}</p>
-    <button class="button is-primary is-large" @click="startGame">Play Again</button>
+    <button class="button is-primary is-large" @click="startGame">{{ ui['playAgain'][language] }}</button>
   </div>
 
   <div class="modal" :class="{ 'is-active': infoFlag !== null }">
     <div class="modal-background" @click="infoFlag = null"></div>
     <div class="modal-card">
       <header class="modal-card-head">
-        <p class="modal-card-title">{{ infoFlag?.name }}</p>
-        <button class="delete" aria-label="close" @click="infoFlag = null"></button>
+        <p class="modal-card-title">{{ infoFlag?.name[language] }}</p>
+        <button class="delete" :aria-label="ui['close'][language]" @click="infoFlag = null"></button>
       </header>
       <section class="modal-card-body">
-        <p>{{ infoFlag?.description }}</p>
+        <p>{{ infoFlag?.description[language] }}</p>
       </section>
     </div>
   </div>
