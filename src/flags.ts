@@ -198,7 +198,7 @@ export const FLAGS: Flag[] = [
   },
   {
     id: 'bear',
-    name: { en: 'Bear Brotherhood', de: 'Bärenbruderschaft' },
+    name: { en: 'Bear Brotherhood', de: 'Bären' },
     description: {
       en: 'Represents the bear community within gay and bisexual culture, typically men with larger, hairier bodies. The stripe colors reflect natural fur tones and celebrate body diversity within the LGBTQ+ community.',
       de: 'Repräsentiert die Bären-Gemeinschaft innerhalb der schwulen und bisexuellen Kultur, typischerweise Männer mit größeren, behaarteren Körpern. Die Streifenfarben spiegeln natürliche Fellfarben wider und feiern die Körpervielfalt in der LGBTQ+-Gemeinschaft.',
@@ -218,7 +218,7 @@ export const FLAGS: Flag[] = [
   },
   {
     id: 'two-spirit',
-    name: { en: 'Two-Spirit', de: 'Zweigeistig' },
+    name: { en: 'Two-Spirit', de: 'Two-Spirit' },
     description: {
       en: 'A term used by some Indigenous North American peoples for a person who holds both a masculine and feminine spirit, fulfilling a traditional third-gender or gender-variant role. The flag combines rainbow colors with white to honor this identity.',
       de: 'Ein Begriff einiger indigener Völker Nordamerikas für eine Person, die sowohl einen männlichen als auch einen weiblichen Geist trägt und eine traditionelle dritte oder geschlechtsvariante Rolle erfüllt. Die Fahne verbindet Regenbogenfarben mit Weiß.',
