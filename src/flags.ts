@@ -160,11 +160,11 @@ export const FLAGS: Flag[] = [
     id: 'progress',
     name: { en: 'Progress Pride', de: 'Progress Pride' },
     description: {
-      en: 'An evolution of the rainbow flag created by Daniel Quasar in 2018. The chevron adds light blue, pink, and white for transgender people, and brown and black for LGBTQ+ people of color and those lost to HIV/AIDS.',
-      de: 'Eine Weiterentwicklung der Regenbogenfahne von Daniel Quasar aus dem Jahr 2018. Der Pfeil fügt Hellblau, Rosa und Weiß für Transgender-Menschen sowie Braun und Schwarz für LGBTQ+-Menschen of Color und die durch HIV/AIDS Verstorbenen hinzu.',
+      en: 'An evolution of the rainbow flag, updated in 2021 by Valentino Vecchietti to add an intersex-inclusive yellow triangle with a purple circle. The chevron also represents transgender people (light blue, pink, white) and LGBTQ+ people of color (brown, black).',
+      de: 'Eine Weiterentwicklung der Regenbogenfahne, 2021 von Valentino Vecchietti um ein Intersex-inklusives gelbes Dreieck mit lila Kreis ergänzt. Der Pfeil steht auch für Transgender-Menschen (Hellblau, Rosa, Weiß) und LGBTQ+-Menschen of Color (Braun, Schwarz).',
     },
     type: 'svg',
-    svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 60"><rect x="0" y="0" width="100" height="10" fill="#E40303"/><rect x="0" y="10" width="100" height="10" fill="#FF8C00"/><rect x="0" y="20" width="100" height="10" fill="#FFED00"/><rect x="0" y="30" width="100" height="10" fill="#008026"/><rect x="0" y="40" width="100" height="10" fill="#004DFF"/><rect x="0" y="50" width="100" height="10" fill="#750787"/><polygon points="0,15 15,30 0,45" fill="#FFFFFF"/><polygon points="0,10 20,30 0,50 0,45 15,30 0,15" fill="#FFAFC8"/><polygon points="0,5 25,30 0,55 0,50 20,30 0,10" fill="#74D7EE"/><polygon points="0,0 30,30 0,60 0,55 25,30 0,5" fill="#613915"/><polygon points="5,0 35,30 5,60 0,60 30,30 0,0" fill="#000000"/></svg>',
+    svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 60"><rect x="0" y="0" width="100" height="10" fill="#E40303"/><rect x="0" y="10" width="100" height="10" fill="#FF8C00"/><rect x="0" y="20" width="100" height="10" fill="#FFED00"/><rect x="0" y="30" width="100" height="10" fill="#008026"/><rect x="0" y="40" width="100" height="10" fill="#004DFF"/><rect x="0" y="50" width="100" height="10" fill="#750787"/><polygon points="0,18 12,30 0,42" fill="#FFD800"/><polygon points="0,15 15,30 0,45 0,42 12,30 0,18" fill="#FFFFFF"/><polygon points="0,10 20,30 0,50 0,45 15,30 0,15" fill="#FFAFC8"/><polygon points="0,5 25,30 0,55 0,50 20,30 0,10" fill="#74D7EE"/><polygon points="0,0 30,30 0,60 0,55 25,30 0,5" fill="#613915"/><polygon points="5,0 35,30 5,60 0,60 30,30 0,0" fill="#000000"/><circle cx="5" cy="30" r="4" fill="none" stroke="#7A00AC" stroke-width="1.5"/></svg>',
   },
   {
     id: 'demisexual',
