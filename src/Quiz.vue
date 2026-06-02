@@ -16,6 +16,21 @@ let advanceTimer: ReturnType<typeof setTimeout> | null = null
 
 const infoFlag = ref<Flag | null>(null)
 
+const CONFETTI_COLORS = ['#E40303', '#FF8C00', '#FFED00', '#008026', '#004DFF', '#750787', '#55CDFC', '#F7A8B8', '#FFFFFF']
+
+const confettiPieces = computed(() => {
+  if (phase.value !== 'gameover' || score.value / questions.value.length <= 0.85) return []
+  return Array.from({ length: 60 }, (_, i): Record<string, string> => ({
+    left: `${((i * 61.8) % 100).toFixed(1)}%`,
+    width: `${6 + (i * 3) % 7}px`,
+    height: `${8 + (i * 5) % 9}px`,
+    backgroundColor: CONFETTI_COLORS[i % CONFETTI_COLORS.length],
+    '--cdelay': `${(i * 0.03).toFixed(2)}s`,
+    '--cduration': `${(1.6 + ((i * 37) % 80) / 100).toFixed(2)}s`,
+    '--cdrift': `${-50 + (i * 13) % 100}px`,
+  }))
+})
+
 const currentQuestion = computed<Question | null>(
   () => questions.value[currentIndex.value] ?? null
 )
@@ -112,6 +127,15 @@ function advance(): void {
     <button class="button is-primary is-large" @click="startGame">{{ ui['playAgain'][language] }}</button>
   </div>
 
+  <div v-if="confettiPieces.length" class="confetti-container" aria-hidden="true">
+    <div
+      v-for="(piece, i) in confettiPieces"
+      :key="i"
+      class="confetti-piece"
+      :style="piece"
+    ></div>
+  </div>
+
   <div class="modal" :class="{ 'is-active': infoFlag !== null }">
     <div class="modal-background" @click="infoFlag = null"></div>
     <div class="modal-card">
@@ -172,6 +196,35 @@ function advance(): void {
   z-index: 1;
   &:hover {
     opacity: 1;
+  }
+}
+
+.confetti-container {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.confetti-piece {
+  position: absolute;
+  top: -12px;
+  border-radius: 2px;
+  animation: confetti-fall var(--cduration) var(--cdelay) ease-in both;
+}
+
+@keyframes confetti-fall {
+  0% {
+    transform: translateY(0) translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) translateX(var(--cdrift)) rotate(540deg);
+    opacity: 0;
   }
 }
 </style>
