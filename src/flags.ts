@@ -246,6 +246,16 @@ export const FLAGS: Flag[] = [
     type: 'stripes',
     colors: ['#E28C00', '#ECCD00', '#FFFFFF', '#62AEDC', '#203D72'],
   },
+  {
+    id: 'ally',
+    name: { en: 'Straight Ally', de: 'Straight Ally' },
+    description: {
+      en: 'Represents heterosexual and cisgender people who actively support the LGBTQ+ community. The black and white stripes come from the heterosexual flag, and the rainbow "A" (for Ally) symbolizes active solidarity.',
+      de: 'Repräsentiert heterosexuelle und cisgender Menschen, die die LGBTQ+-Gemeinschaft aktiv unterstützen. Die schwarz-weißen Streifen stammen von der heterosexuellen Flagge, und das Regenbogen-„A" (für Ally) symbolisiert aktive Solidarität.',
+    },
+    type: 'svg',
+    svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 60"><rect x="0" y="0" width="100" height="7.5" fill="#000000"/><rect x="0" y="7.5" width="100" height="7.5" fill="#FFFFFF"/><rect x="0" y="15" width="100" height="7.5" fill="#000000"/><rect x="0" y="22.5" width="100" height="7.5" fill="#FFFFFF"/><rect x="0" y="30" width="100" height="7.5" fill="#000000"/><rect x="0" y="37.5" width="100" height="7.5" fill="#FFFFFF"/><rect x="0" y="45" width="100" height="7.5" fill="#000000"/><rect x="0" y="52.5" width="100" height="7.5" fill="#FFFFFF"/><defs><clipPath id="ally-a"><text x="50" y="50" text-anchor="middle" font-size="52" font-family="Arial,Helvetica,sans-serif" font-weight="bold">A</text></clipPath></defs><g clip-path="url(#ally-a)"><rect x="10" y="0" width="80" height="10" fill="#E40303"/><rect x="10" y="10" width="80" height="10" fill="#FF8C00"/><rect x="10" y="20" width="80" height="10" fill="#FFED00"/><rect x="10" y="30" width="80" height="10" fill="#008026"/><rect x="10" y="40" width="80" height="10" fill="#004DFF"/><rect x="10" y="50" width="80" height="10" fill="#750787"/></g></svg>',
+  },
 ]
 
 export const FLAG_MAP: Record<string, Flag> = Object.fromEntries(
