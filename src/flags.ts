@@ -188,13 +188,23 @@ export const FLAGS: Flag[] = [
   },
   {
     id: 'polyamory',
-    name: { en: 'Polyamory', de: 'Polyamorie' },
+    name: { en: 'Polyamory (1995)', de: 'Polyamorie (1995)' },
     description: {
-      en: 'Represents ethical non-monogamy: maintaining multiple loving relationships with the full knowledge and consent of all involved. The gold pi symbol represents infinite love; blue represents openness, red passion, and black solidarity.',
-      de: 'Repräsentiert ethische Nicht-Monogamie: mehrere Liebesbeziehungen mit vollem Wissen und Einverständnis aller Beteiligten zu führen. Das goldene Pi-Symbol steht für unendliche Liebe; Blau für Offenheit, Rot für Leidenschaft und Schwarz für Solidarität.',
+      en: 'Designed by Jimmy Weiss in 1995. Represents ethical non-monogamy: maintaining multiple loving relationships with the full knowledge and consent of all involved. The gold pi symbol represents infinite love; blue represents openness, red passion, and black solidarity.',
+      de: 'Entworfen von Jimmy Weiss im Jahr 1995. Repräsentiert ethische Nicht-Monogamie: mehrere Liebesbeziehungen mit vollem Wissen und Einverständnis aller Beteiligten zu führen. Das goldene Pi-Symbol steht für unendliche Liebe; Blau für Offenheit, Rot für Leidenschaft und Schwarz für Solidarität.',
     },
     type: 'svg',
     svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 60"><rect x="0" y="0" width="100" height="20" fill="#0000FF"/><rect x="0" y="20" width="100" height="20" fill="#FF0000"/><rect x="0" y="40" width="100" height="20" fill="#000000"/><text x="50" y="38" text-anchor="middle" font-size="28" fill="#FFD700" font-family="serif">π</text></svg>',
+  },
+  {
+    id: 'polyamory-tricolor',
+    name: { en: 'Polyamory (Tricolor, 2022)', de: 'Polyamorie (Tricolor, 2022)' },
+    description: {
+      en: 'A newer polyamory flag design featuring blue, magenta, and purple stripes with a white chevron and gold heart. The heart symbolizes love, and the chevron shape points toward an open, expanding future for the relationship.',
+      de: 'Ein neueres Design der Polyamorie-Flagge mit blauen, magentafarbenen und lila Streifen sowie einem weißen Winkel und einem goldenen Herz. Das Herz symbolisiert Liebe, und die Winkelform zeigt auf eine offene, wachsende Zukunft der Beziehung.',
+    },
+    type: 'svg',
+    svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 768"><rect x="0" y="0" width="1280" height="256" fill="#009FE3"/><rect x="0" y="256" width="1280" height="256" fill="#E5007D"/><rect x="0" y="512" width="1280" height="256" fill="#2E0B41"/><polygon points="0,0 256,0 512,384 256,768 0,768" fill="#FFFFFF"/><path d="M16 29C16 29 0 18.5 0 9.5C0 4.25 4.5 0 9.5 0C12.5 0 15 1.5 16 4C17 1.5 19.5 0 22.5 0C27.5 0 32 4.25 32 9.5C32 18.5 16 29 16 29Z" fill="#FFC800" transform="translate(30,230) scale(9)"/></svg>',
   },
   {
     id: 'bear',
