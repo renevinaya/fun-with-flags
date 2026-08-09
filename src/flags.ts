@@ -204,7 +204,7 @@ export const FLAGS: Flag[] = [
       de: 'Ein neueres Design der Polyamorie-Flagge mit blauen, magentafarbenen und lila Streifen sowie einem weißen Winkel und einem goldenen Herz. Das Herz symbolisiert Liebe, und die Winkelform zeigt auf eine offene, wachsende Zukunft der Beziehung.',
     },
     type: 'svg',
-    svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 768"><rect x="0" y="0" width="1280" height="256" fill="#009FE3"/><rect x="0" y="256" width="1280" height="256" fill="#E5007D"/><rect x="0" y="512" width="1280" height="256" fill="#2E0B41"/><polygon points="0,0 256,0 512,384 256,768 0,768" fill="#FFFFFF"/><path d="M16 29C16 29 0 18.5 0 9.5C0 4.25 4.5 0 9.5 0C12.5 0 15 1.5 16 4C17 1.5 19.5 0 22.5 0C27.5 0 32 4.25 32 9.5C32 18.5 16 29 16 29Z" fill="#FFC800" transform="translate(30,230) scale(9)"/></svg>',
+    svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 768"><rect x="0" y="0" width="1280" height="256" fill="#009FE3"/><rect x="0" y="256" width="1280" height="256" fill="#E50051"/><rect x="0" y="512" width="1280" height="256" fill="#340C46"/><polygon points="0,0 256,0 512,256 0,768" fill="#FFFFFF"/><path d="M29,16 C29,16 18.5,32 9.5,32 C4.25,32 0,27.5 0,22.5 C0,19.5 1.5,17 4,16 C1.5,15 0,12.5 0,9.5 C0,4.5 4.25,0 9.5,0 C18.5,0 29,16 29,16 Z" fill="#FCCA2A" transform="translate(99,107) scale(9.311)"/></svg>',
   },
   {
     id: 'bear',
