@@ -15,7 +15,7 @@ export const displayNames: Record<language, string> = {
 
 export const ui: Record<string, Record<language, string>> = {
   tagline:      { en: 'Do you know your pride flags?',                                de: 'Kennst du deine Pride-Flaggen?' },
-  intro:        { en: "You'll see {n} flags — pick the right name from 4 options.",   de: 'Du wirst {n} Flaggen sehen — wähle den richtigen Namen aus 4 Optionen.' },
+  intro:        { en: "You'll see {n} flags — pick the right name from 4 options.",   de: 'Du wirst {n} Flaggen sehen – wähle den richtigen Namen aus 4 Optionen.' },
   startBtn:     { en: 'Start Quiz',                                                   de: 'Quiz starten' },
   question:     { en: 'What flag is this?',                                           de: 'Welche Flagge ist das?' },
   learnMore:    { en: 'Learn more',                                                   de: 'Mehr erfahren' },
