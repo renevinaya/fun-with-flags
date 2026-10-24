@@ -32,13 +32,13 @@ defineProps<{ flag: Flag }>()
         class="flag-circle-bg"
         :style="{ backgroundColor: (flag as StripesWithCircleFlag).background }"
       >
-        <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" class="flag-circle-svg">
+        <svg viewBox="0 0 900 600" preserveAspectRatio="xMidYMid meet" class="flag-circle-svg">
           <circle
-            cx="50"
-            cy="50"
-            r="30"
+            cx="450"
+            cy="300"
+            r="147"
             :stroke="(flag as StripesWithCircleFlag).circleColor"
-            stroke-width="6"
+            stroke-width="53.625"
             fill="none"
           />
         </svg>
@@ -75,8 +75,8 @@ defineProps<{ flag: Flag }>()
 }
 
 .flag-circle-svg {
-  width: 60%;
-  height: 60%;
+  width: 100%;
+  height: 100%;
 }
 
 .flag-svg-container {
