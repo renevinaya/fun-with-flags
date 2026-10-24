@@ -227,16 +227,6 @@ export const FLAGS: Flag[] = [
     svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 18"><rect width="27" height="18" fill="#000000"/><rect y="2" width="27" height="2" fill="#18186B"/><rect y="6" width="27" height="6" fill="#18186B"/><rect y="14" width="27" height="2" fill="#18186B"/><rect y="8" width="27" height="2" fill="#FFFFFF"/><path d="M58,17C52,7 42,0 30,0C13,0 0,13 0,30C0,63 18,68 58,106C98,68 116,63 116,30C116,13 103,0 86,0C74,0 64,7 58,17z" fill="#E70039" stroke="#000000" stroke-width=".25" transform="translate(1.3643,4.274) rotate(-38) scale(.0663,.0674)"/></svg>',
   },
   {
-    id: 'two-spirit',
-    name: { en: 'Two-Spirit', de: 'Two-Spirit' },
-    description: {
-      en: 'A term used by some Indigenous North American peoples for a person who holds both a masculine and feminine spirit, fulfilling a traditional third-gender or gender-variant role. The flag combines rainbow colors with white to honor this identity.',
-      de: 'Ein Begriff einiger indigener Völker Nordamerikas für eine Person, die sowohl einen männlichen als auch einen weiblichen Geist trägt und eine traditionelle dritte oder geschlechtsvariante Rolle erfüllt. Die Fahne verbindet Regenbogenfarben mit Weiß.',
-    },
-    type: 'stripes',
-    colors: ['#E40303', '#FF8C00', '#FFED00', '#FFFFFF', '#008026', '#004DFF', '#750787'],
-  },
-  {
     id: 'gay',
     name: { en: 'Gay Men', de: 'Schwul' },
     description: {

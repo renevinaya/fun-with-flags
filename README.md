@@ -6,7 +6,7 @@ A bilingual (DE/EN) pride flag quiz built with Vue 3, TypeScript, and Bulma.
 
 ## How it works
 
-Each round shows all 20 pride flags one by one. For each flag, pick the correct name from four options — the wrong answers are chosen based on visual color similarity to make it genuinely challenging. Click the ⓘ icon on any answer button to read a short explanation of the identity it represents.
+Each round shows every pride flag one by one. For each flag, pick the correct name from four options — the wrong answers are chosen based on visual color similarity to make it genuinely challenging. Click the ⓘ icon on any answer button to read a short explanation of the identity it represents.
 
 The interface is available in German and English. Your language preference is saved automatically.
 

@@ -2,6 +2,11 @@
 import type { Flag, StripesFlag, StripesProportionalFlag, StripesWithCircleFlag, SvgFlag } from './flags.ts'
 
 defineProps<{ flag: Flag }>()
+
+// Fill the 3:2 frame instead of letterboxing; flags wider than 3:2 lose a sliver of their striped fly end
+function fillFrame(svg: string): string {
+  return svg.replace('<svg ', '<svg preserveAspectRatio="xMinYMid slice" ')
+}
 </script>
 
 <template>
@@ -46,7 +51,7 @@ defineProps<{ flag: Flag }>()
     </template>
 
     <template v-else-if="flag.type === 'svg'">
-      <div class="flag-svg-container" v-html="(flag as SvgFlag).svg" />
+      <div class="flag-svg-container" v-html="fillFrame((flag as SvgFlag).svg)" />
     </template>
   </div>
 </template>
