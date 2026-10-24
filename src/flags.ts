@@ -190,8 +190,8 @@ export const FLAGS: Flag[] = [
     id: 'polyamory',
     name: { en: 'Polyamory (1995)', de: 'Polyamorie (1995)' },
     description: {
-      en: 'Designed by Jimmy Weiss in 1995. Represents ethical non-monogamy: maintaining multiple loving relationships with the full knowledge and consent of all involved. The gold pi symbol represents infinite love; blue represents openness, red passion, and black solidarity.',
-      de: 'Entworfen von Jimmy Weiss im Jahr 1995. Repräsentiert ethische Nicht-Monogamie: mehrere Liebesbeziehungen mit vollem Wissen und Einverständnis aller Beteiligten zu führen. Das goldene Pi-Symbol steht für unendliche Liebe; Blau für Offenheit, Rot für Leidenschaft und Schwarz für Solidarität.',
+      en: 'Designed by Jim Evans in 1995. Represents ethical non-monogamy: maintaining multiple loving relationships with the full knowledge and consent of all involved. The Greek letter pi stands for the first letter of "polyamory", and its gold for the value of emotional attachment. Blue represents openness and honesty among all partners, red love and passion, and black solidarity with those who must hide their relationships.',
+      de: 'Entworfen von Jim Evans im Jahr 1995. Repräsentiert ethische Nicht-Monogamie: mehrere Liebesbeziehungen mit vollem Wissen und Einverständnis aller Beteiligten zu führen. Der griechische Buchstabe Pi steht für den Anfangsbuchstaben von „Polyamorie", sein Gold für den Wert emotionaler Bindung. Blau steht für Offenheit und Ehrlichkeit unter allen Beteiligten, Rot für Liebe und Leidenschaft und Schwarz für Solidarität mit denen, die ihre Beziehungen verbergen müssen.',
     },
     type: 'svg',
     svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 60"><rect x="0" y="0" width="100" height="20" fill="#0000FF"/><rect x="0" y="20" width="100" height="20" fill="#FF0000"/><rect x="0" y="40" width="100" height="20" fill="#000000"/><text x="50" y="38" text-anchor="middle" font-size="28" fill="#FFD700" font-family="serif">π</text></svg>',
@@ -200,8 +200,8 @@ export const FLAGS: Flag[] = [
     id: 'polyamory-tricolor',
     name: { en: 'Polyamory (Tricolor, 2022)', de: 'Polyamorie (Tricolor, 2022)' },
     description: {
-      en: 'A newer polyamory flag design featuring blue, magenta, and purple stripes with a white chevron and gold heart. The heart symbolizes love, and the chevron shape points toward an open, expanding future for the relationship.',
-      de: 'Ein neueres Design der Polyamorie-Flagge mit blauen, magentafarbenen und lila Streifen sowie einem weißen Winkel und einem goldenen Herz. Das Herz symbolisiert Liebe, und die Winkelform zeigt auf eine offene, wachsende Zukunft der Beziehung.',
+      en: 'Designed by Red Howell and chosen in 2022 from four candidates in an online vote by the blog PolyamProud with over 30,000 participants. Blue stands for openness and honesty, magenta for love and attraction, and purple for a united non-monogamous community. The white chevron represents possibility and growth. The heart stands for love at the core of non-monogamy, and its gold for the energy and perseverance of the community.',
+      de: 'Von Red Howell entworfen und 2022 in einer Online-Abstimmung des Blogs PolyamProud mit über 30.000 Teilnehmenden aus vier Entwürfen gewählt. Blau steht für Offenheit und Ehrlichkeit, Magenta für Liebe und Anziehung und Lila für eine geeinte nicht-monogame Gemeinschaft. Der weiße Winkel symbolisiert Möglichkeiten und Wachstum. Das Herz steht für die Liebe als Kern der Nicht-Monogamie, sein Gold für die Energie und Ausdauer der Gemeinschaft.',
     },
     type: 'svg',
     svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 924.09 555.59"><rect x="0" y="0" width="924.09" height="185.2" fill="#009FE3"/><rect x="0" y="185.2" width="924.09" height="185.2" fill="#E50051"/><rect x="0" y="370.39" width="924.09" height="185.2" fill="#340C46"/><polygon points="0,0 185.2,0 370.39,185.2 0,555.59" fill="#FFFFFF"/><path d="M89.62,94.72h0c-23.89,23.89-23.89,62.64,0,86.53l3.82,3.82h0s-4.07,4.07-4.07,4.07c-23.89,23.89-23.89,62.64,0,86.53h0c23.89,23.89,62.64,23.89,86.53,0l4.07-4.07,86.53-86.53,.79-.79-87.09-85.52-.23-.23-3.82-3.82c-23.89-23.89-62.64-23.89-86.53,0Z" fill="#FCBF00"/></svg>',
