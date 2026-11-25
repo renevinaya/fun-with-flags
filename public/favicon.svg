@@ -1,1 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"><clipPath id="c"><rect y="4" width="36" height="28" rx="4"/></clipPath><g clip-path="url(#c)"><path fill="#E50000" d="M0 4h36v5H0z"/><path fill="#FF8D00" d="M0 8.67h36v5H0z"/><path fill="#FFEE00" d="M0 13.33h36v5H0z"/><path fill="#028121" d="M0 18h36v5H0z"/><path fill="#004CFF" d="M0 22.67h36v5H0z"/><path fill="#770088" d="M0 27.33h36v4.67H0z"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <style>
+    .pole { stroke: #4a3a5c; }
+    @media (prefers-color-scheme: dark) { .pole { stroke: #e8e0f0; } }
+  </style>
+  <!-- flagpole with a golden finial -->
+  <path class="pole" d="M6 9v52" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="6" cy="5.5" r="4" fill="#FFC531"/>
+  <!-- waving rainbow flag: six stripes following the same wave -->
+  <g fill="none" stroke-width="6.6">
+    <path stroke="#770088" d="M8 42C21 33 36 50 62 38"/>
+    <path stroke="#004CFF" d="M8 36C21 27 36 44 62 32"/>
+    <path stroke="#028121" d="M8 30C21 21 36 38 62 26"/>
+    <path stroke="#FFEE00" d="M8 24C21 15 36 32 62 20"/>
+    <path stroke="#FF8D00" d="M8 18C21 9 36 26 62 14"/>
+    <path stroke="#E50000" d="M8 12C21 3 36 20 62 8"/>
+  </g>
+  <!-- quiz badge -->
+  <circle cx="47" cy="47" r="15" fill="#7B2D8B" stroke="#fff" stroke-width="3"/>
+  <path d="M41.5 42.5a5.5 5.5 0 1 1 8 4.9c-1.6.8-2.5 1.9-2.5 3.6v1" fill="none" stroke="#fff" stroke-width="3.8" stroke-linecap="round"/>
+  <circle cx="47" cy="57" r="2.3" fill="#fff"/>
+</svg>
